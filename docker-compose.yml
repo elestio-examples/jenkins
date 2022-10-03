@@ -3,7 +3,6 @@ version: '3.3'
 services:
   jenkins:
     image: docker.io/bitnami/jenkins:${SOFTWARE_VERSION_TAG}
-    container_name: jenkins
     restart: always
     env_file:
       - .env

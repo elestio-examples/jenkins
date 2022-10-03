@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  jenkins:
+    image: docker.io/bitnami/jenkins:${SOFTWARE_VERSION_TAG}
+    container_name: jenkins
+    restart: always
+    env_file:
+      - .env
+    ports:
+      - '172.17.0.1:21080:8080'
+    volumes:
+      - './data:/bitnami/jenkins'

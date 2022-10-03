@@ -6,11 +6,7 @@ services:
     restart: always
     env_file:
       - .env
-    environment:
-      JAVA_OPTS: -Djenkins.install.runSetupWizard=false
-      JENKINS_OPTS: --argumentsRealm.roles.user=${JENKINS_USERNAME} --argumentsRealm.passwd.admin=${JENKINS_PASSWORD} --argumentsRealm.roles.admin=admin
     ports:
       - '172.17.0.1:21080:8080'
-      - '172.17.0.1:50900:50000'
     volumes:
-      - './data:/var/jenkins_home'
+      - './data:/bitnami/jenkins'

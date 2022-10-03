@@ -15,7 +15,10 @@ environments:
   - key: JENKINS_PASSWORD
     value: "random_password"
   - key: "JENKINS_EMAIL"
-    value: "[EMAIL]"              
+    value: "[EMAIL]"     
+  - key: "ADMIN_PASSWORD"
+    value: "random_password"
+    
 config:
   runTime: "dockerCompose"
   version: ""

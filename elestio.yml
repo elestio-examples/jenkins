@@ -7,6 +7,14 @@ ports:
     public: true
     path: "/"
     isAuth: false
+  - protocol: "TCP"
+    targetProtocol: "TCP"
+    listeningPort: "50800"
+    targetPort: "50900"
+    targetIP: "172.17.0.1"
+    public: true
+    path: "/"
+    isAuth: false
 environments:
   - key: SOFTWARE_VERSION_TAG
     value: "lts-jdk11"

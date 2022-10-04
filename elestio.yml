@@ -9,7 +9,7 @@ ports:
     isAuth: false
 environments:
   - key: SOFTWARE_VERSION_TAG
-    value: "latest"
+    value: "lts-jdk11"
   - key: JENKINS_USERNAME
     value: "root"
   - key: JENKINS_PASSWORD

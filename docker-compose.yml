@@ -2,11 +2,11 @@ version: '3.3'
 
 services:
   jenkins:
-    image: bitnami/jenkins:${SOFTWARE_VERSION_TAG}
+    image: jenkins/jenkins:${SOFTWARE_VERSION_TAG}
     restart: always
     env_file:
       - .env
     ports:
       - '172.17.0.1:21080:8080'
     volumes:
-      - './data:/bitnami/jenkins'
+      - './data:/var/jenkins_home'

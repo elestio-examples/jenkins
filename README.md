@@ -14,6 +14,20 @@ Deploy Jenkins server with CI/CD on Elestio
 You can can open Jenkins UI here:
 
     URL: https://[CI_CD_DOMAIN]
+
+You will have to complete the initial setup and you will require the initial password. 
+To find the initial password open a terminal from your pipeline dashboard and type:
+
+    docker-compose exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+
+Copy the password displayed (Eg: fcdd2545d3f8418c82f6280034440729)
+
+Then complete the web setup here: https://[CI_CD_DOMAIN]
+
+It's recommended to install the default plugins when requested in the setup. 
+
+You will also be asked to create the first admin account, you can use those credentials when creating your admin account
+
     Login: root
     password: [ADMIN_PASSWORD]
 

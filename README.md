@@ -16,6 +16,7 @@ You can can open Jenkins UI here:
     URL: https://[CI_CD_DOMAIN]
 
 You will have to complete the initial setup and you will require the initial password. 
+
 To find the initial password open a terminal from your pipeline dashboard and type:
 
     docker-compose exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword

@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   jenkins:
-    image: jenkins/jenkins:${SOFTWARE_VERSION_TAG}
+    image: bitnami/jenkins:${SOFTWARE_VERSION_TAG}
     restart: always
     env_file:
       - .env

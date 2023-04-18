@@ -11,7 +11,7 @@ Deploy Jenkins server with CI/CD on Elestio
 
 # Once deployed ...
 
-You can can open Jenkins UI here:
+You can open Jenkins UI here:
 
     URL: https://[CI_CD_DOMAIN]
 

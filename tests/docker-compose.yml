@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  jenkins:
+    image: elestio4test/jenkins:${SOFTWARE_VERSION_TAG}
+    restart: always
+    environment:
+      - .env
+    volumes:
+      - ./data:/var/jenkins_home
+    ports:
+      - '172.17.0.1:21080:8080'

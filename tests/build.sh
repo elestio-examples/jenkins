@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-docker build --build-arg RELEASE_LINE=war -f 17/alpine/hotspot/Dockerfile . --tag elestio4test/jenkins:latest
+sed -i "s~-jdk-alpine~-jdk-centos7~g" ./17/alpine/hotspot/Dockerfile
+sed -i "s~ARG RELEASE_LINE~ARG RELEASE_LINE=war~g" ./17/alpine/hotspot/Dockerfile
+docker build-f 17/alpine/hotspot/Dockerfile . --tag elestio4test/jenkins:latest

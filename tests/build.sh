@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
-sed -i "s~https://get.jenkins.io/~https://get.jenkins.io/war~g" ./17/rhel/ubi9/hotspot/Dockerfile
-docker build -f ./17/rhel/ubi9/hotspot/Dockerfile . --tag elestio4test/jenkins:latest
+cp -r ./17/rhel/ubi9/hotspot/* ./
+sed -i "s~https://get.jenkins.io/~https://get.jenkins.io/war~g" ./Dockerfile
+docker build . --tag elestio4test/jenkins:latest

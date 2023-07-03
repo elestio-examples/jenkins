@@ -5,6 +5,7 @@ services:
     restart: always
     environment:
       - .env
+    user: 0:0
     volumes:
       - ./data:/var/jenkins_home
     ports:
